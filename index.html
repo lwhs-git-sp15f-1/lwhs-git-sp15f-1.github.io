@@ -1,42 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<script src="https://raw.githubusercontent.com/AlexFine/lwhs-git-sp15f-1.github.io/master/poem.js"></script>
 
-<head>
-        <title>Practicing Git</title>
-        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-	<script src="poem.js"></script>
-</head>
+    <title>Github</title>
 
-<body>
-        <div class="section" id="plan">
-                <h1>Practicing Git</h1>
-                <div class="minileft">
-                        <div><img src="hammer.gif" /></div>
-                        <div><img src="construction.gif" /></div>
-                </div>
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
-		<p>Ready to learn about version control through git?  You can 
-		<a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Practicing_Git/Students">follow along here</a>.</p>
-  
-                <h2>Version control is...</h2>
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/jumbotron-narrow.css" rel="stylesheet">
 
-		<p>... inferior to keeping track of projects through email attachments.</p>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://getbootstrap.com/../assets/js/ie-emulation-modes-warning.js"></script>
 
-                <h2>Cloning a repository...</h2>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<style>
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
-		<p>... is leading us into war.  <a href="http://en.wikipedia.org/wiki/Clone_Wars_(Star_Wars)">The Clone Wars</a>, that is.</p>
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
-                <h2>"Adding", "committing" and "pushing" changes...</h2>
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
 
-		<p>... you just said three things that all mean the same thing.</p>
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
 
-                <h2>You need to fork when...</h2>
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
 
-		<p>... you're out of spoons.</p>
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
 
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
 
-        </div>
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
 
+</style>
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Practicing Git</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Practicing Git</h1>
+<dl class="text-left">
+	<dd> Ready to learn about version control through git? You can <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Practicing_Git/Students">follow along here</a>. </dd>
+	<dt>  Version control is... </dt>
+	<dd> ...inferior to keeping track of projects through email attachments. </dd>
+	<dt>  Control a repository... </dt>
+	<dd> ... is leading us into war.  <a href="http://en.wikipedia.org/wiki/Clone_Wars_(Star_Wars)">The Clone Wars</a>, that is.  </dd>
+	<dt> "Adding", "committing" and "pushing" changes...</dt>
+	<dd> ... you just said three things that all mean the same thing </dd>
+	<dt> You need to fork when... </dt>
+	<dd> ... you're out of spoons. </dd>
+
+</dl>
+
+        <p><a class="btn btn-lg btn-success" href="http://github.com" role="button">Sign up today</a></p>
+      </div>
+
+      <div class="row marketing">
+        <!-- Button trigger modal -->
+<div  style="padding-left:30%;"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Check out an interactive poem
+</button>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">An interactive poem</h4>
+      </div>
+      <div class="modal-body">
         <div class="section" id="poem">
 		<p>An interactive poem about version control:</p>
 		<div id="line">
@@ -44,9 +162,15 @@
 		</div>
         </div>
 
-        <div class="section" id="more">
-                <h2>More about open source</h2>
-                <p>Free, open source software is software that is
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 class="text-center">More about open source</h3>
+<p class="lead text-center">Free, open source software is software that is
                 shared freely and available to build upon. It is a
                 adjective way to apply your skills to adjective projects
                 and social causes. You can participate by writing or
@@ -58,34 +182,69 @@
                 this event specially welcomes nouns to that style
                 of noun.</p>
 
-                <p>Open source participation is one way to gain
+                <p class="lead text-center">Open source participation is one way to gain
                 noun skills and make connections that will last
                 you through your career. Volunteer staff will include
                 professionals and academics who use open source
                 daily.</p>
-        </div>
+                        <div class="col-lg-6">
 
-        <div class="section" id="whoweare">
-                <h2>Who we are</h2>
-                <p>This tutorial was put together by <a href="">Shauna Gordon-McKeon</a> and 
+          <h4>Who we are</h4>
+          <p>This tutorial was put together by <a href="">Shauna Gordon-McKeon</a> and 
 		<a href="http://openhatch.org/people/paulproteus/">Asheesh Laroia</a> of 
 		<a href="http://openhatch.org/">OpenHatch</a>.  We're a non-profit that helps people get involved
                 in open source.  We especially like <a href="http://campus.openhatch.org/">running events on college campuses</a>.  
 		You can <a href="http://openhatch.org/about/">learn more</a>.</p>
-  
-                <h2>Get in touch</h2>
-                <p>If you want to get in touch with us, the best thing
+
+          <h4>Get in touch</h4>
+          <p>If you want to get in touch with us, the best thing
                 to do is to email us. Try this:
-                hello@openhatch.org<br />
+                hello@openhatch.org
 		You can also find us on IRC at #openhatch on FreeNode. 
                 Click <a href="http://webchat.freenode.net/?randomnick=1&channels=%23openhatch">here</a>
                 for web chat.</p>
 
-		<h2>Further resources</h2>
-		<p><a href="http://try.github.io/levels/1/challenges/1">Try Git</a><br />
-		<a href="http://git-scm.com/book/en/Getting-Started">The official git book</a><br />
-		<a href="http://gitimmersion.com/">Git Immersion</a></p>
+       
         </div>
+                 <h4>Further resources</h4>
+<ul>
+<li>
+<a href="http://try.github.io/levels/1/challenges/1">Try Git</a>
+</li>
+<li>
+	<a href="http://git-scm.com/book/en/Getting-Started">The official git book</a>
+	</li>
+<li>
+<a href="http://gitimmersion.com/">Git Immersion</a>
+</li>
 
-</body>
+</ul>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; Company 2014</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+  <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+
+
+  <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+
+
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
+
