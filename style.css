@@ -29,8 +29,8 @@ body{
 }
 
 a {                  /* A stands for link, so this section is setting the default characteristics of links. */
-	color: #C41E3A;
-	text-decoration: none;
+	color: white;
+	text-decoration: underline;
 }
 
 h1 {		     /* This styles the header at the top of the page */
