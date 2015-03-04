@@ -21,7 +21,7 @@ html, body {
 }
 
 body{
-	font: 130%/1.3 TrebuchetMS,Arial,sans-serif;  /* Default fonts */
+	font: 130%/1.3 "Comic Sans MS", cursive, sans-serif;  /* Default fonts */
 	text-align: left; /* Alignment of the text */
 	color: black; /* Main text color */
 	background: white; /* Main text background color */
@@ -34,13 +34,13 @@ a {                  /* A stands for link, so this section is setting the defaul
 }
 
 h1 {		     /* This styles the header at the top of the page */
-	font: bold 2.1em 'Source Sans Pro',Arial, Sans-Serif;
+	font: bold 2.1em "Comic Sans MS", cursive, sans-serif;
 	text-align: left;
-	color: white;
+	color: pink;
 }
 
 h2 {		     /* This styles the headers within the page */
-	font: bold 1.1em 'Source Sans Pro',Arial, Sans-Serif;
+	font: bold 1.1em "Comic Sans MS", cursive, sans-serif;
 	padding: 0;
 	margin: 0;
 }
@@ -57,8 +57,8 @@ div.section {
 /* If we want the divs with ids plan and more to look the same, we can put them together */
 #plan, #more {
 	background:#000080;
-	color: white;
-	font: 'Source Sans Pro',Arial, Sans-Serif;
+	color: yellow;
+	font: "Comic Sans MS", cursive, sans-serif;
 	background-image: none;  /* replace none with url('image-url') to set a background image  */
 }
 
@@ -70,7 +70,7 @@ div.section {
 /* This alters the appearance of the div with id="signup". */
 #poem {
 	height: 110px;
-	background: white;
+	background: green;
 	text-align: center;
 }
 
